@@ -108,7 +108,7 @@ body {
 }
 p { font-family: lato; }
 .text_widget {
-	font-family: lato;
+	font-family: lato;  
 	text-transform: none;
 	margin-top: 40px;
 }
