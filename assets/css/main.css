@@ -628,6 +628,7 @@ a.playlist_expander{
 .video_caption,.video_caption h5{
 	font-size:20px;
 	font-family:lato;
+	text-transform: none;
 	color:#cc1313;
 	font-weight:800;
 }
@@ -635,8 +636,8 @@ a.playlist_expander{
 	margin:0 auto;
 	width:200px;
 	height:200px;
-	border:20px solid #cc1313;
-	color:#fff;
+	border:20px solid ;
+	color:transparent;
 	border-radius:50%;
 	text-align:center;
 	line-height:175px;
@@ -687,7 +688,7 @@ a.playlist_expander{
 	overflow:hidden;
 }
 .channels_list li a {
-	display: block;
+	display: flex;
 	width: 100%;
 	background: #fff;
 	padding: 15px 30px;
@@ -715,6 +716,19 @@ a.playlist_expander{
 	-webkit-animation: toUpCustom 0.3s forwards;
 	-moz-animation: toUpCustom 0.3s forwards;
 	animation: toUpCustom 0.3s forwards;
+}
+.process {
+	display:flex;
+	width: 100%;
+	padding: 20px 60px;
+	padding-top: 5em;
+	position: relative;
+	text-align: center; 
+	color: #8a8585;
+}
+.gap{
+	padding-left: 5em;
+	
 }
 
 .ScrollTo i{
@@ -834,6 +848,7 @@ a.playlist_expander{
 }
 .navbar-brand{
 	float:none;
+	text-transform: none;
 }
 .navbar-nav{
 	margin-top:1px;
@@ -1073,7 +1088,7 @@ a.playlist_expander{
 	display: inline-block;
 	padding-left: 10px;
 	font-size: 36px;
-	float: left;
+	
 	font-weight: 300;
 }
 .newsletter_form input[type="submit"], .newsletter_form button {
@@ -1124,7 +1139,7 @@ a.playlist_expander{
 .team_stand img:nth-child(4) {
 	z-index:20;
 } 
-.team_stand img(5) {
+.team_stand img:nth-child(5) {
 	z-index:10;
 } 
 
@@ -2127,7 +2142,8 @@ h6 { font-size: 15px; }
 	display:none;
 }
 .video_controls .play-pause {
-    border: 6px solid #cc1313;
+    border: 6px solid;
+	color: transparent;
     font-size: 35px;
     height: 140px;
     line-height: 140px;
@@ -2324,8 +2340,9 @@ a.playlist_expander{
 	margin-top:-30px;
 }
 .video_controls .play-pause {
-    border: 2px solid #cc1313;
+    border: 2px solid;
     font-size: 16px;
+	color: transparent;
     height: 60px;
     line-height: 60px;
     width: 60px;
